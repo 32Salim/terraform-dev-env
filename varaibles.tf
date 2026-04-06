@@ -68,3 +68,18 @@ variable "github_branch" {
   default     = "main"
 }
 
+variable "identity_center_instance_arn" {
+  description = "AWS IAM Identity Center instance ARN"
+  type        = string
+}
+
+variable "identity_store_id" {
+  description = "AWS IAM Identity Center Identity Store ID"
+  type        = string
+}
+
+variable "aws_account_id" {
+  description = "AWS account ID where permission sets will be assigned"
+  type        = string
+}
+

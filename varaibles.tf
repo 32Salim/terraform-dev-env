@@ -83,3 +83,32 @@ variable "aws_account_id" {
   type        = string
 }
 
+variable "my_ip" {
+  description = "Public IP address allowed to SSH into bastion host"
+  type        = string
+}
+
+variable "bastion_instance_type" {
+  description = "Instance type for bastion host"
+  type        = string
+  default     = "t3.micro"
+}
+
+variable "bastion_key_name" {
+  description = "Existing EC2 key pair name for bastion SSH access"
+  type        = string
+}
+
+variable "private_instance_type" {
+  description = "Instance type for private EC2 instance"
+  type        = string
+  default     = "t3.micro"
+}
+
+variable "private_key_name" {
+  description = "Existing EC2 key pair name for private instance"
+  type        = string
+}
+
+
+
